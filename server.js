@@ -30,8 +30,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 app.use(express.static("app/public"));
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("app/routing/apiRoutes.js")(app);
+require("app/routing/htmlRoutes.js")(app);
 
 // =============================================================================
 // LISTENER
