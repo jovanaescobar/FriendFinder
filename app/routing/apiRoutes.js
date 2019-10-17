@@ -17,14 +17,14 @@ module.exports = function(app) {
         };
 
 var userData = req.body;
-var userName = UserData.name;
-var userScores = UserData.scores;
+var userName = userData.name;
+var userScores = userData.scores;
 
 var b = userScores.map(function(item){
     return parseInt(item, 10);
 });
 
-UserData = {
+userData = {
     name: req.body.name,
     photo: req.body.photo,
     scores: b
@@ -44,13 +44,26 @@ for (var i = 0; i < friends.length; i++) {
     console.log("Total difference " + totalDifference);
     console.log("Best match friend diff " + bestMatch.friendDifference);
 
-var bfriendScore = friends[i].scores.reduce((a, b) => a + b, 0);
+var bfriendScore = friends[i].scores.reduce((a,b) => a + b, 0);
 console.log("Total friend score " + bfriendScore);
 totalDifference += Math.abs(sum - bfriendScore);
 console.log("-----------------> " + totalDifference);
 
 }
 
+if(totalDifference <= bestMatch.friendDifference) {
+    bestMatch.name = friends[i].name;
+    bestMatch.photo = friends[i].photo;
+    bestMatch.friendDifference = totalDifference;
+}
+console.log(totalDifference + "Total Difference");
 
-    });
+});
+
+console.log(bestMatch);
+friends.push(userData);
+console.log("New User added");
+console.log(userData);   
+res.json(bestMatch);
 };
+
