@@ -9,6 +9,11 @@ var path = require("path");
 var app = express();
 var port = process.env.PORT || 3030;
 
+app.listen(process.env.PORT || 3030, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
+
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,4 +25,4 @@ app.use(express.static("app/public"));
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-app.listen(port, () => console.log("Listening on port", port));
+// app.listen(port, () => console.log("Listening on port", port));
