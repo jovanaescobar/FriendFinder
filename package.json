@@ -1,7 +1,7 @@
 {
-  "name": "friendfinder",
+  "name": "Friend Finder",
   "version": "1.0.0",
-  "description": "class project",
+  "description": "Homework",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/jovanaescobar/FriendFinder.git"
   },
-  "author": "DCox",
+  "author": "Jovana E.",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jovanaescobar/FriendFinder.git"
