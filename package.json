@@ -1,8 +1,13 @@
 {
-  "name": "Friend Finder",
+  "name": "friendfinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "class project",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,14 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/jovanaescobar/FriendFinder.git"
   },
-  "author": "",
+  "author": "DCox",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jovanaescobar/FriendFinder.git"
   },
-  "homepage": "https://github.com/jovanaescobar/FriendFinder.git#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  }
+  "homepage": "https://github.com/jovanaescobar/FriendFinder.git#readme"
 }
