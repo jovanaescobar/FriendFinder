@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Friend Finder</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Friend Finder!</title>
+    <!--CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+    />
 
-     
-</head>
-<body>
 
+  </head>
+  <body>
     <div class="container">
-        <div class="jumbotron">
-
-            <h1>Friend Finder</h1>
-            <hr>
-            <h2>Interested in meeting someone new? <br> Take our compatibility survey and find them now!</h2>
-            <br>
-            <div class="text-center">
-                <a href="/survey.html"><button type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list-alt"></span>  Friend Finder Survey</button></a>
-            </div>
-
+      <div class="jumbotron">
+        <div class="Mntitle"><h1>Friend Finder!</h1></div>
+        <h2 class="Mntitle">
+          A new friend is 10 questions away.
+        </h2>
+        <br />
+        <div>
+          <a href="/survey">
+            <button type="button" class="btn btn-lg btn-primary">
+              <h4>
+                <span class="glyphicon glyphicon-list-alt"></span> Begin Survey
+              </h4>
+            </button>
+          </a>
         </div>
+      
+      <footer class="footer text-center">
+        <div class="container">
+          <p>
 
-    <footer class="footer">
-      <div class="container">
-            <p class="bold"><a href="/api/friends">API Friends Link</a> |
-            <a href="Insert Github Link Here" target="_blank">GitHub Repo</a></p>
-      </div>
-    </footer>
+                <a href="app/data/friends.js">API Friends</a> |
+            <a href="https://github.com/jovanaescobar/FriendFinder">GitHub Repo</a>
+            <br />
+          </p>
+        </div>
+      </footer>
     </div>
-
-</body>
+  </body>
 </html>
